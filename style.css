@@ -1,0 +1,72 @@
+body {
+    background: #eeeeee;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+
+h1 {
+    font-family: 'Russo One';
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.othello table {
+    background: #009067;
+}
+
+.othello td {
+    width: 40px;
+    height: 40px;
+    border: 1px dashed #000000;
+    cursor: pointer;
+}
+
+.othello td span {
+    display: block;
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px; 
+    -moz-border-radius: 20px; 
+    -webkit-border-radius: 20px; 
+    margin: 5px 0 0 5px;
+}
+
+.othello .score-node {
+    display: inline-block;
+    font-family: 'Russo One';
+    width: 125px;
+    padding: 10px;
+    font-size: 30px;
+    background: #DDDDDD;
+    border-radius: 20px; 
+    -moz-border-radius: 20px; 
+    -webkit-border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.othello .score-black {
+    color: black;
+}
+
+.othello .score-white {
+    color: white;
+}
+
+.othello-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+}
+
+#sticky-footer {
+    flex-shrink: none;
+    margin-top: 3rem;
+}
