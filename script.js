@@ -1,5 +1,4 @@
 var othello = {
-
     othello: null,
     score: null,
     turno: null,
@@ -35,7 +34,9 @@ var othello = {
     //preparo la griglia di gioco e il primo player
     //
     initGame: function () {
-
+        this.score.black.elem.innerHTML = '&nbsp;2&nbsp;';
+        this.score.white.elem.innerHTML = '&nbsp;2&nbsp;';
+        this.score.round.elem.innerHTML = '&nbsp;ROUND 0&nbsp;';
         this.setTurno(this.states.white);
 
         this.setStato(4, 4, this.states.white);
@@ -136,15 +137,13 @@ var othello = {
         scoreBlack = document.createElement('span'),
             scoreWhite = document.createElement('span');
 
-        roundCounter.className = 'score-node round-counter';
-        scoreBlack.className = 'score-node score-black';
-        scoreWhite.className = 'score-node score-white';
+        roundCounter.className = 'round-counter';
+        scoreBlack.className = 'score-node-black score-white';
+        scoreWhite.className = 'score-node-white score-black';
 
         scoreBar.appendChild(scoreBlack);
-        scoreBar.appendChild(roundCounter);
         scoreBar.appendChild(scoreWhite);
-
-        this.othello.appendChild(scoreBar);
+        
         this.score = {
             'round': {
                 'elem': roundCounter,
@@ -157,10 +156,13 @@ var othello = {
                 'elem': scoreWhite,
                 'state': 0
             },
-
+            
         }
-
+        
+        this.othello.appendChild(roundCounter);
         this.othello.appendChild(table);
+        this.othello.appendChild(scoreBar);
+        
     },
 
     //calcola il punteggio contando le pedine controllandone il colore
