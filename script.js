@@ -36,7 +36,6 @@ var othello = {
     //
     initGame: function () {
 
-        this.score.round.elem.innerHTML = '&nbsp;ROUND\n0&nbsp;';
         this.setTurno(this.states.white);
 
         this.setStato(4, 4, this.states.white);
