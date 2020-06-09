@@ -5,7 +5,6 @@ body {
     margin-top: 2rem;
 }
 
-
 h1 {
     font-family: 'Russo One';
 }
@@ -18,10 +17,11 @@ h3 {
     background: #009067;
 }
 
+
 .othello td {
     width: 40px;
     height: 40px;
-    border: 1px dashed #000000;
+    border: 1px double #000000;
     cursor: pointer;
 }
 
@@ -36,23 +36,48 @@ h3 {
     margin: 5px 0 0 5px;
 }
 
-.othello .score-node {
+.othello .score-node-white {
     display: inline-block;
     font-family: 'Russo One';
-    width: 125px;
+    width: 70px;
+    height: 70px;
     padding: 10px;
     font-size: 30px;
-    background: #DDDDDD;
-    border-radius: 20px; 
-    -moz-border-radius: 20px; 
-    -webkit-border-radius: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%; 
+    margin: 10px;
+    border: 1px solid #000000;
+    text-align: center;
+    
+}
+
+.othello .score-node-black {
+    display: inline-block;
+    font-family: 'Russo One';
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    font-size: 30px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%; 
     margin: 10px;
     text-align: center;
     
 }
 
+.othello .round-counter {
+    display: inline-block;
+    font-family: 'Russo One';
+    width: 300px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+
 .othello .score-black {
-    color: black;
+    color: rgb(12, 12, 12);
 }
 
 .othello .score-white {
