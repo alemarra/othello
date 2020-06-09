@@ -479,7 +479,7 @@ var othello = {
                 this.setStato(i, j, this.states.blank);
             }
         }
-        round=0;
+        this.round=0;
     },
 
 
