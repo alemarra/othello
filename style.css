@@ -89,9 +89,9 @@ h3 {
     align-items: center; 
     justify-content: center;
     text-align: center; 
+    margin-bottom: 7rem;
 }
 
 #sticky-footer {
     flex-shrink: none;
-    margin-top: 7rem;
 }
